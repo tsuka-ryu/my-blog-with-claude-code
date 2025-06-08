@@ -6,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:screenshots": "playwright test tests/screenshots/",
+    "screenshots": "npm run test:screenshots",
+    "playwright:install": "playwright install"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -22,6 +25,7 @@
     "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
-    "@eslint/eslintrc": "^3"
+    "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.40.0"
   }
 }
