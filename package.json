@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:screenshots": "playwright test tests/screenshots/",
-    "screenshots": "npm run test:screenshots",
+    "screenshots": "playwright test tests/screenshots/",
     "playwright:install": "playwright install"
   },
   "dependencies": {
