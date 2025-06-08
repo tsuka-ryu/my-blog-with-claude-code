@@ -14,13 +14,11 @@ export default function Home() {
         />
         <div className="text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <p className="mb-2 tracking-[-.01em]">
-            This page was created using{" "}
+            このページは{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
               Claude Code action
             </code>
-          </p>
-          <p className="tracking-[-.01em] text-gray-600 dark:text-gray-400">
-            このページはClaude Code actionを使って作成されました
+            を使って作成されました
           </p>
         </div>
 
@@ -38,7 +36,7 @@ export default function Home() {
               width={20}
               height={20}
             />
-            Deploy now
+            今すぐデプロイ
           </a>
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
@@ -46,7 +44,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            ドキュメントを読む
           </a>
         </div>
       </main>
@@ -64,7 +62,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
+          学習
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -79,7 +77,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Examples
+          例
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -94,7 +92,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          nextjs.orgへ →
         </a>
       </footer>
     </div>
