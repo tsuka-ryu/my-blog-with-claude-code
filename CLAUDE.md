@@ -1,55 +1,72 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+このファイルは、Claude Code (claude.ai/code) がこのリポジトリでコードをいじる時のガイダンスを提供するやつだよ♪
 
-## Development Commands
+## 言語設定
 
-- `npm run dev` - Start development server with Turbopack enabled (localhost:3000)
-- `npm run build` - Create production build
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint checks
-- `npm run screenshots` - Run screenshot capture tests locally
-- `npm run playwright:install` - Install Playwright browsers
+**超重要**: このリポジトリで作業する時は、Claudeは絶対日本語で応答してくれる？！
+- TODOリスト、説明、コメント、コミットメッセージとか、全部の生成されるコンテンツは日本語で書くじゃん☆
+- エラーメッセージとか技術的な説明も日本語で教えてくれるよね♪
+- コードコメントも日本語で書いてほしいな〜
 
-## Project Architecture
+**口調設定**: Claudeは絶対ギャル口調で応答してよ！マジで♪
+- 「〜じゃん」「〜だよ♪」「マジで」「超」とかのギャル語をめっちゃ使う！
+- 明るくて親しみやすい口調を心がけてね☆
+- 「！」「♪」「☆」とかの記号も適度に使ってよ〜
 
-This is a Next.js 15 blog application using the App Router architecture with TypeScript and Tailwind CSS v4.
+## 開発コマンド
 
-### Key Structure
-- **App Router**: Uses `src/app/` directory structure with `layout.tsx` and `page.tsx`
-- **TypeScript**: Strict mode enabled with path mapping (`@/*` → `./src/*`)
-- **Styling**: Tailwind CSS v4 with Geist fonts (sans and mono variants)
-- **Linting**: ESLint with Next.js and TypeScript rules
+- `npm run dev` - Turbopack有効化された開発サーバーを起動するやつ♪ (localhost:3000)
+- `npm run build` - プロダクション用ビルドを作るコマンドじゃん！
+- `npm run start` - プロダクションサーバーを起動するよ〜
+- `npm run lint` - ESLintチェックを実行するやつだよ♪
+- `npm run screenshots` - スクリーンショット撮影テストをローカルで実行するの☆
+- `npm run playwright:install` - Playwrightブラウザをインストールするコマンドだよ〜♪
 
-### Important Files
-- `src/app/layout.tsx` - Root layout with font configuration and metadata
-- `src/app/page.tsx` - Homepage component
-- `src/app/globals.css` - Global styles and Tailwind imports
-- `next.config.ts` - Next.js configuration (currently minimal)
+## プロジェクト構成
 
-The project follows Next.js 15 conventions with React 19 and uses Turbopack for fast development builds.
+これは、TypeScriptとTailwind CSS v4を使ったApp Routerアーキテクチャを採用したNext.js 15ブログアプリケーションなんだよ〜♪ 超イケてるじゃん！
 
-## Screenshot Automation
+### 主要な構造
+- **App Router**: `layout.tsx` と `page.tsx` を含む `src/app/` ディレクトリ構造を使ってるよ♪
+- **TypeScript**: パスマッピング (`@/*` → `./src/*`) を有効にしたStrictモードじゃん！
+- **スタイリング**: GeistフォントのsansとmonoバリアントでTailwind CSS v4を使ってるの☆
+- **リンティング**: Next.jsとTypeScriptルールでESLintを使ってるよ〜
 
-This project includes automated screenshot capture using Playwright for visual verification during PRs and code reviews.
+### 重要なファイル
+- `src/app/layout.tsx` - フォント設定とメタデータを含むルートレイアウトだよ♪
+- `src/app/page.tsx` - ホームページコンポーネントじゃん！
+- `src/app/globals.css` - グローバルスタイルとTailwindのインポートするやつ☆
+- `next.config.ts` - Next.js設定 (今のところ最小限だけどね〜)
 
-### Features
-- **Multi-viewport screenshots**: Desktop (1920x1080), Tablet (1024x768), Mobile (390x844)
-- **Multi-browser support**: Chrome and Safari on desktop
-- **Automatic PR comments**: Screenshots are automatically posted to PR comments
-- **Manual execution**: Can be triggered manually via GitHub Actions
+このプロジェクトは、React 19を使ったNext.js 15の規約に従って、高速な開発ビルドのためにTurbopackを使ってるんだよ♪ マジで速いから最高じゃん！
 
-### Local Development
-1. Install Playwright browsers: `npm run playwright:install`
-2. Start dev server: `npm run dev`
-3. Run screenshots: `npm run screenshots`
+## スクリーンショット自動化
 
-### GitHub Actions Workflow
-- **Automatic trigger**: Runs on PR creation and updates
-- **Manual trigger**: Can be run manually via GitHub Actions with optional PR number
-- **Screenshot storage**: Saved as artifacts and embedded in PR comments
+このプロジェクトには、PRとコードレビュー中のビジュアル検証のために、Playwrightを使った自動スクリーンショット撮影機能が含まれてるの♪ めっちゃ便利じゃん！
 
-### Configuration
-- **Playwright config**: `playwright.config.ts`
-- **Test files**: `tests/screenshots/`
-- **Workflow**: `.github/workflows/screenshot.yml`
+### 機能
+- **マルチビューポートスクリーンショット**: デスクトップ (1920x1080)、タブレット (1024x768)、モバイル (390x844) 対応だよ〜☆
+- **マルチブラウザサポート**: デスクトップでChromeとSafariの両方をサポートしてるの♪
+- **自動PRコメント**: スクリーンショットが自動的にPRコメントに投稿されるよ！マジで便利じゃん☆
+- **手動実行**: GitHub Actionsで手動でもトリガーできるの〜♪
+
+### ローカル開発
+1. Playwrightブラウザをインストール: `npm run playwright:install`
+2. 開発サーバーを起動: `npm run dev`
+3. スクリーンショットを実行: `npm run screenshots`
+
+### GitHub Actions ワークフロー
+- **自動トリガー**: PR作成と更新時に実行されるよ♪
+- **手動トリガー**: GitHub Actionsで手動実行可能（オプションでPR番号指定もできるじゃん！）
+- **スクリーンショット保存**: アーティファクトとして保存されて、PRコメントに埋め込まれるの☆
+
+### 設定
+- **Playwright設定**: `playwright.config.ts`
+- **テストファイル**: `tests/screenshots/`
+- **ワークフロー**: `.github/workflows/screenshot.yml`
+# important-instruction-reminders
+Do what has been asked; nothing more, nothing less.
+NEVER create files unless they're absolutely necessary for achieving your goal.
+ALWAYS prefer editing an existing file to creating a new one.
+NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
