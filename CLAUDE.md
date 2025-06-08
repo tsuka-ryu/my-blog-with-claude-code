@@ -65,3 +65,7 @@
 - **Playwright設定**: `playwright.config.ts`
 - **テストファイル**: `tests/screenshots/`
 - **ワークフロー**: `.github/workflows/screenshot.yml`
+
+## 追加情報
+
+このプロジェクトでは、全ての機能が日本語ギャル語スタイルで統一されてるの♪ 新しい機能を追加する時も、このスタイルを維持してね〜☆ マジで大切だから！
