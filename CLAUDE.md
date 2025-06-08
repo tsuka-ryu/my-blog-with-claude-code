@@ -1,28 +1,35 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+このファイルは、Claude Code (claude.ai/code) がこのリポジトリでコードを扱う際のガイダンスを提供します。
 
-## Development Commands
+## 言語設定
 
-- `npm run dev` - Start development server with Turbopack enabled (localhost:3000)
-- `npm run build` - Create production build
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint checks
+**重要**: このリポジトリで作業する際は、Claudeは必ず日本語で応答してください。
+- TODOリスト、説明、コメント、コミットメッセージなど、全ての生成されるコンテンツは日本語で記述する
+- エラーメッセージや技術的な説明も日本語で提供する
+- コードコメントも日本語で記述する
 
-## Project Architecture
+## 開発コマンド
 
-This is a Next.js 15 blog application using the App Router architecture with TypeScript and Tailwind CSS v4.
+- `npm run dev` - Turbopack有効化された開発サーバーを起動 (localhost:3000)
+- `npm run build` - プロダクション用ビルドを作成
+- `npm run start` - プロダクションサーバーを起動
+- `npm run lint` - ESLintチェックを実行
 
-### Key Structure
-- **App Router**: Uses `src/app/` directory structure with `layout.tsx` and `page.tsx`
-- **TypeScript**: Strict mode enabled with path mapping (`@/*` → `./src/*`)
-- **Styling**: Tailwind CSS v4 with Geist fonts (sans and mono variants)
-- **Linting**: ESLint with Next.js and TypeScript rules
+## プロジェクト構成
 
-### Important Files
-- `src/app/layout.tsx` - Root layout with font configuration and metadata
-- `src/app/page.tsx` - Homepage component
-- `src/app/globals.css` - Global styles and Tailwind imports
-- `next.config.ts` - Next.js configuration (currently minimal)
+これは、TypeScriptとTailwind CSS v4を使用したApp Routerアーキテクチャを採用したNext.js 15ブログアプリケーションです。
 
-The project follows Next.js 15 conventions with React 19 and uses Turbopack for fast development builds.
+### 主要な構造
+- **App Router**: `layout.tsx` と `page.tsx` を含む `src/app/` ディレクトリ構造を使用
+- **TypeScript**: パスマッピング (`@/*` → `./src/*`) を有効にしたStrictモード
+- **スタイリング**: GeistフォントのsansとmonoバリアントでTailwind CSS v4を使用
+- **リンティング**: Next.jsとTypeScriptルールでESLintを使用
+
+### 重要なファイル
+- `src/app/layout.tsx` - フォント設定とメタデータを含むルートレイアウト
+- `src/app/page.tsx` - ホームページコンポーネント
+- `src/app/globals.css` - グローバルスタイルとTailwindのインポート
+- `next.config.ts` - Next.js設定 (現在は最小限)
+
+このプロジェクトは、React 19を使用したNext.js 15の規約に従い、高速な開発ビルドのためにTurbopackを使用しています。
