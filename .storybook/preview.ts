@@ -9,6 +9,10 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    // Next.js Image最適化をStorybookでも使えるようにするよ〜♪
+    nextjs: {
+      appDirectory: true,
+    },
   },
 };
 

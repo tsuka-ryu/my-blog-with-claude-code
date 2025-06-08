@@ -8,8 +8,13 @@ const config: StorybookConfig = {
   ],
   framework: {
     name: '@storybook/nextjs',
-    options: {},
+    options: {
+      // Next.jsの画像最適化をStorybookで有効にするよ〜♪
+      nextConfigPath: '../next.config.ts',
+    },
   },
+  // publicフォルダの静的ファイルをStorybookで使えるようにするじゃん☆
+  staticDirs: ['../public'],
   typescript: {
     check: false,
     reactDocgen: 'react-docgen-typescript',
