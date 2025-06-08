@@ -12,18 +12,17 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
+        <div className="text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          <p className="mb-2 tracking-[-.01em]">
+            This page was created using{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
+              Claude Code action
             </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+          </p>
+          <p className="tracking-[-.01em] text-gray-600 dark:text-gray-400">
+            このページはClaude Code actionを使って作成されました
+          </p>
+        </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
