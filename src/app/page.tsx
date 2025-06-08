@@ -14,11 +14,13 @@ export default function Home() {
         />
         <div className="text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <p className="mb-2 tracking-[-.01em]">
-            このページは{" "}
+            This page was created using{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
               Claude Code action
             </code>
-            を使って作成されました
+          </p>
+          <p className="tracking-[-.01em] text-gray-600 dark:text-gray-400">
+            このページはClaude Code actionを使って作成されました
           </p>
         </div>
 
@@ -92,7 +94,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          nextjs.orgへ →
+          nextjs.org へ →
         </a>
       </footer>
     </div>
